@@ -6,6 +6,8 @@ node_js:
 - '12'
 git:
   depth: 3
+script:
+- echo "skipping tests"
 deploy:
   skip_cleanup: true
   provider: script
