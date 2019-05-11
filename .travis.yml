@@ -1,0 +1,15 @@
+
+sudo: required
+dist: trusty
+language: node_js
+node_js:
+- '12'
+git:
+  depth: 3
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: "./.travis/telegram"
+  on:
+    repo: dmitriym09/test-wsenevts
+    branch: master
