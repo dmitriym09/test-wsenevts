@@ -11,7 +11,7 @@ script:
 deploy:
   skip_cleanup: true
   provider: script
-  script: "./.travis/telegram.sh"
+  script: ".travis/telegram.sh"
   on:
     repo: dmitriym09/test-wsenevts
     branch: master
